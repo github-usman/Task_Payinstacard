@@ -1,0 +1,22 @@
+{
+  "name": "payinsta_backend",
+  "version": "1.0.0",
+  "description": "user authentication and registration compeletion",
+  "main": "index.js",
+  "type": "module",
+  "author": "usman",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

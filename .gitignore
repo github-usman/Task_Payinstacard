@@ -1,3 +1,65 @@
+# for backend
+
 node_modules/
 .env
 *.log
+
+
+
+
+# for react js ignore files
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build output
+build/
+dist/
+
+# Ignore log files and debugging output
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+*.log
+
+# Ignore development and production build files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore editor and IDE configuration files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore dependency lock files
+yarn.lock
+package-lock.json
+
+# Ignore environment-specific .env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore TypeScript build output
+*.tsbuildinfo
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore npm debug logs
+npm-debug.log*
+
+# Ignore Yarn logs
+yarn-debug.log*
+yarn-error.log*

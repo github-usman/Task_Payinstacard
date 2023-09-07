@@ -29,17 +29,8 @@ debug.log
 .env.test.local
 .env.production.local
 
-# Ignore macOS system files
-.DS_Store
 
-# Ignore editor and IDE configuration files
-.idea/
-.vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+
 
 # Ignore dependency lock files
 yarn.lock

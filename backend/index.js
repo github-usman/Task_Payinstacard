@@ -1,6 +1,7 @@
 import express from "express";
 import { connectToMongo } from "./db.js";
 import authRoutes from "./routes/auth.js";
+import cors from "cors";
 
 
 connectToMongo();
@@ -8,9 +9,10 @@ connectToMongo();
 
 
 const app = express();
-const port = process.env.PORT || 3000;
+const dbHost = process.env.DB_HOST;
+const dbPort = process.env.DB_PORT;
 app.use(express.json());
-
+app.use(cors());
 app.get('/', (req, res) => {
   res.send('Hello, Usman ali ansari!');
 });
@@ -19,6 +21,7 @@ app.get('/', (req, res) => {
 app.use("/auth", authRoutes);
 
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+
+app.listen(dbPort, () => {
+  console.log(`App listening on port ${dbHost}${dbPort}`);
 });

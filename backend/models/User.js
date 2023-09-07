@@ -9,11 +9,16 @@ const UserSchema = new Schema({
   user_name: {
     type: String,
     required: true,
+    unique: true,
   },
   email: {
     type: String,
     required: true,
     unique: true,
+  },
+  phone: {
+    type: String,
+    
   },
   password: {
     type: String,
@@ -27,6 +32,14 @@ const UserSchema = new Schema({
     type: Date,
     required:true,
   },
+  address: {
+    type: String,
+    
+  },
+  date:{
+    type:Date,
+    default:Date.now
+  }
 });
 
 export default mongoose.model("User", UserSchema);
